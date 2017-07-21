@@ -8,10 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>GC Coffee - Welcome</title>
+    <title>Title</title>
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script></head>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -52,18 +54,17 @@
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
+<form action="" method="post" role="form">
+    <legend>Registratione</legend>
 
-<div class="jumbotron">
-    <div class="container">
-        <h1>Welcome to GC Coffee!</h1>
-        <p>Register Below</p>
-        <p>
-            <a class="btn btn-primary btn-lg" href="registration.jsp">Registration</a>
-        </p>
+    <div class="form-group">
+        <label for=""></label>
+        <input type="text" class="form-control" name="" id="" placeholder="Input...">
     </div>
-</div>
 
 
 
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </body>
 </html>
