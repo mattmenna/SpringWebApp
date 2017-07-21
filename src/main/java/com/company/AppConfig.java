@@ -1,4 +1,4 @@
-package com.company;
+package com.test.util;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
