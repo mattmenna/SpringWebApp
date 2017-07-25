@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>GC Coffee - Welcome</title>
+    <title>GC Coffee - Form Results</title>
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script></head>
@@ -27,18 +27,15 @@
     </ul>
 </div>
 
-
-<div class="jumbotron">
-    <div class="container">
-        <h1>Welcome to GC Coffee!</h1>
-        <p>Register Below</p>
-        <p>
-            <a class="btn btn-primary btn-lg" href="/form">Registration</a>
-        </p>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h1>Hello ${name}</h1><br>
+        This is what you entered<br>
+        Name: = ${name}<br>
+        Preferred Order = ${type}<br>
+        ${coffeeOption}<br>
+        Subscription Choice: ${subscription}<br>
     </div>
 </div>
-
-
-
 </body>
 </html>
