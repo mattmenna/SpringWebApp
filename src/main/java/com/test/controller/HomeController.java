@@ -25,16 +25,17 @@ public class HomeController {
     @RequestMapping("/success")
     //model is a parameter that allows us to add items or stuff to our jsp page
     public String formSuccess(Model model, @RequestParam("c_name") String firstName,
-                              @RequestParam("c_type") String lastName,
-                              @RequestParam("options") String option,
-                              @RequestParam("emailSubscribe") String subscribe) {
+                              @RequestParam("c_type") String lastName)
+    {
+                              //@RequestParam("options") String option,
+                              //@RequestParam("emailSubscribe") String subscribe) {
 
         //add values to the jsp page using the model and attribute method
 
         model.addAttribute("name", firstName);
         model.addAttribute("type", lastName);
-        model.addAttribute("coffeeOption", option);
-        model.addAttribute("subscription", subscribe);
+        //model.addAttribute("coffeeOption", option);
+        //model.addAttribute("subscription", subscribe);
 
         return "formsuccess";
     }
